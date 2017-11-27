@@ -2,7 +2,7 @@
 
 "name": "Bolt",
 "description": "Bolt Bot",
-"version": "1.0.0",
+"version": "6.9.1",
 "main": "bot.js",
 "scripts": {
     "start": "node bot.js"
