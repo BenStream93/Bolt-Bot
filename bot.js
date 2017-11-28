@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const prefix = "**";
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -36,7 +37,7 @@ module.exports = function (bot, options) {
   const warnBuffer = (options && options.prefix) || 3;
   const maxBuffer = (options && options.prefix) || 5;
   const interval = (options && options.interval) || 1000;
-  const warningMessage = (options && options.warningMessage) || "stop spamming or I'll whack your head off.";
+  const warningMessage = (options && options.warningMessage) || "stop spamming, or you'll be kicked.";
   const banMessage = (options && options.banMessage) || "has been banned for spamming, anyone else?";
   const maxDuplicatesWarning = (options && options.duplicates || 7);
   const maxDuplicatesBan = (options && options.duplicates || 10);
